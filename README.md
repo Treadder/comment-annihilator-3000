@@ -1,65 +1,38 @@
-# comment-annihilator-3000 README
+💥 Comment Annihilator 3000 💥
 
-This is the README for your extension "comment-annihilator-3000". After writing up a brief description, we recommend including the following sections.
+Clean Code, Zero Effort.
 
-## Features
+This extension provides a powerful, single-command utility to aggressively remove all single-line comments (//) from your active file, ensuring your code remains clean and compact.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+✨ Features
 
-For example if there is an image subfolder under your extension project workspace:
+The Annihilator uses precise regex logic to handle two scenarios flawlessly:
 
-\!\[feature X\]\(images/feature-x.png\)
+Full-Line Comment Removal: If a line contains only a comment (with optional indentation), the entire line is deleted, collapsing the space.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+// This entire line will vanish
+var x = 1;
 
-## Requirements
+becomes:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+var x = 1;
 
-## Extension Settings
+Inline Comment Deletion: If a line contains code followed by a comment, only the comment (and the preceding whitespace) is removed. The code and its line break are preserved.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+var x = 1; // This part is deleted
 
-For example:
+becomes:
 
-This extension contributes the following settings:
+var x = 1;
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+URL Protection: The extension will never remove // if it is preceded by a colon (:), protecting links in your code like https://example.com//path.
 
-## Known Issues
+🚀 Usage
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Open the file you wish to clean.
 
-## Release Notes
+Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
 
-Users appreciate release notes as you update your extension.
+Search for: Annihilate All Single-Line Comments (Excluding URLs)
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Execute the command. Your file is instantly cleaned!
