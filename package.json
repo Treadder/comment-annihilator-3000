@@ -3,7 +3,7 @@
   "displayName": "Comment Annihilator 3000",
   "description": "Removes all single-line comments in a document while preserving URLs.",
   "version": "0.0.1",
-  "publisher": "Jared Kelnhofer",
+  "publisher": "JaredKelnhofer",
   "engines": {
     "vscode": "^1.104.0" 
   },
