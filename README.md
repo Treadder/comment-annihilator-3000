@@ -43,3 +43,11 @@ The Annihilator uses precise regex logic to handle two scenarios flawlessly:
 2.  Open the **Command Palette** (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 3.  Search for: `Annihilate All Single-Line Comments (Excluding URLs)`
 4.  Execute the command. Your file is instantly cleaned!
+
+### Limitations
+
+1. Expects your multiline comments to be formatted properly. If you have an unterminated `/*` in a C# file you might get wonky results when running this.
+
+### Resources
+
+1. https://regexr.com/ is super helpful for working on the logic for this thing
