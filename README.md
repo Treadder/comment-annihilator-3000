@@ -20,8 +20,6 @@ This extension provides a powerful, single-command utility to aggressively remov
 | **React**      | ✅ / ❌               | ✅ / ❌              | Untested, coming soon                                                 |
 | **Vue**        | ✅ / ❌               | ✅ / ❌              | Untested, coming soon                                                 |
 
----
-
 ### 🚀 Usage
 
 1.  Open the file you wish to clean.
@@ -34,8 +32,6 @@ This extension provides a powerful, single-command utility to aggressively remov
 
 1.  **Multiline Comment Formatting:** Expects your multiline comments to be formatted properly. If you have an unterminated `/*` (or `"""`) in a file, you might get wonky results when running this.
 2.  **String wierdness:** There's bound to be edge cases with URL strings, etc. Feel free to open a PR or email me if you find a bug!
-
----
 
 ### Resources
 
